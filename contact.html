@@ -505,19 +505,19 @@
         }
 
         /* =========================================
-       SUBPAGE HERO
+       SUBPAGE HERO — FULL WIDTH, NO IMAGE
     ========================================= */
         .subpage-hero {
             position: relative;
-            padding: 60px 0 80px;
+            padding: 70px 0 90px;
             overflow: hidden;
+            border-bottom: 1px solid rgba(31, 22, 25, 0.06);
         }
 
-        .subpage-hero-grid {
-            display: grid;
-            grid-template-columns: 1.15fr 0.85fr;
-            gap: 50px;
-            align-items: center;
+        .subpage-hero-content {
+            max-width: 100%;
+            position: relative;
+            z-index: 1;
         }
 
         .breadcrumb {
@@ -529,7 +529,7 @@
             text-transform: uppercase;
             letter-spacing: 0.14em;
             color: var(--text-muted);
-            margin-bottom: 30px;
+            margin-bottom: 32px;
         }
 
         .breadcrumb a {
@@ -541,11 +541,12 @@
         }
 
         .subpage-hero-title {
-            font-size: clamp(3rem, 6vw, 5.2rem);
-            line-height: 0.98;
+            font-size: clamp(3.2rem, 7vw, 6.2rem);
+            line-height: 0.94;
             color: var(--text);
             font-weight: 300;
-            margin-bottom: 24px;
+            margin-bottom: 28px;
+            max-width: 1200px;
         }
 
         .subpage-hero-title em {
@@ -554,94 +555,51 @@
             font-weight: 400;
         }
 
-        .subpage-hero-desc {
-            font-size: 1rem;
-            color: var(--text-soft);
-            max-width: 520px;
-            line-height: 1.75;
-            font-weight: 400;
-            margin-bottom: 32px;
+        .subpage-hero-bottom {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 60px;
+            align-items: end;
+            margin-top: 40px;
         }
 
-        .subpage-hero-tags {
+        .subpage-hero-desc {
+            font-size: 1.05rem;
+            color: var(--text-soft);
+            max-width: 680px;
+            line-height: 1.75;
+            font-weight: 400;
+        }
+
+        .subpage-hero-meta {
             display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            font-size: 0.66rem;
+            flex-direction: column;
+            gap: 14px;
+            border-left: 1px solid rgba(31, 22, 25, 0.1);
+            padding-left: 32px;
+            justify-self: end;
+        }
+
+        .subpage-hero-meta-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.72rem;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.16em;
+            letter-spacing: 0.14em;
             color: var(--text-muted);
         }
 
-        .subpage-hero-tags span {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .subpage-hero-tags span::before {
-            content: '';
-            width: 5px;
-            height: 5px;
-            background: var(--accent-light);
-            border-radius: 50%;
-        }
-
-        .subpage-hero-media {
-            position: relative;
-            width: 100%;
-            max-width: 480px;
-            aspect-ratio: 4/5;
-            border-radius: var(--radius-xl) var(--radius-sm) var(--radius-xl) var(--radius-sm);
-            overflow: hidden;
-            border: 1px solid rgba(31, 22, 25, 0.08);
-            box-shadow: var(--shadow-soft);
-            justify-self: flex-end;
-        }
-
-        .subpage-hero-media img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: saturate(0.85) contrast(1.02) brightness(1.02);
-            transition: var(--transition);
-        }
-
-        .subpage-hero-media:hover img {
-            transform: scale(1.04);
-        }
-
-        .subpage-hero-media::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(31, 22, 25, 0.3), transparent 55%);
-        }
-
-        .subpage-hero-label {
-            position: absolute;
-            bottom: 24px;
-            left: 24px;
-            background: var(--surface-white);
-            border: 1px solid rgba(31, 22, 25, 0.08);
-            border-radius: var(--radius);
-            padding: 12px 18px;
-            box-shadow: var(--shadow-card);
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.66rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            color: var(--accent);
-            z-index: 2;
-        }
-
-        .subpage-hero-label i {
+        .subpage-hero-meta-row i {
             color: var(--accent-light);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            width: 18px;
+        }
+
+        .subpage-hero-meta-row strong {
+            color: var(--text);
+            font-weight: 700;
         }
 
         /* SECTION UTILITIES */
@@ -687,7 +645,6 @@
             align-items: start;
         }
 
-        /* LEFT: Profile stack */
         .contact-stack {
             display: flex;
             flex-direction: column;
@@ -796,7 +753,6 @@
             font-weight: 400;
         }
 
-        /* WhatsApp card — special treatment */
         .contact-card.whatsapp {
             background: linear-gradient(160deg, #0B132B 0%, #12203F 100%);
             border-color: rgba(37, 211, 102, 0.2);
@@ -833,7 +789,6 @@
             color: rgba(255, 255, 255, 0.6);
         }
 
-        /* RIGHT: Form panel */
         .contact-form-panel {
             background: var(--surface-white);
             border: 1px solid rgba(31, 22, 25, 0.06);
@@ -1020,7 +975,7 @@
         }
 
         /* =========================================
-       QUOTE CTA — DARK BURGUNDY SHOWCASE
+       QUOTE CTA
     ========================================= */
         .quote-cta {
             padding: 0 0 100px;
@@ -1411,15 +1366,17 @@
 
         /* RESPONSIVE */
         @media (max-width: 1100px) {
-            .subpage-hero-grid {
+            .subpage-hero-bottom {
                 grid-template-columns: 1fr;
-                gap: 48px;
+                gap: 32px;
             }
 
-            .subpage-hero-media {
-                max-width: 100%;
-                aspect-ratio: 16/10;
-                justify-self: flex-start;
+            .subpage-hero-meta {
+                justify-self: start;
+                border-left: none;
+                padding-left: 0;
+                border-top: 1px solid rgba(31, 22, 25, 0.1);
+                padding-top: 24px;
             }
 
             .contact-layout {
@@ -1599,7 +1556,7 @@
             }
 
             .subpage-hero {
-                padding: 40px 0 60px;
+                padding: 50px 0 60px;
             }
 
             .subpage-hero-title {
@@ -1696,8 +1653,7 @@
     <header class="site-header" id="site-header">
         <div class="container header-inner">
             <a class="logo" href="index.html">
-                <img src="assets/imgs/logo-shipchandler-malta.png" alt="ShipChandler Montenegro Logo" width="42"
-                    height="42">
+                <img src="assets/imgs/logo.jpg" alt="ShipChandler Montenegro Logo" width="42" height="42">
                 <span class="logo-text">
                     <strong>ShipChandler</strong>
                     <span>Montenegro</span>
@@ -1763,35 +1719,39 @@
     </header>
 
     <main>
-        <!-- SUBPAGE HERO -->
+        <!-- SUBPAGE HERO — FULL WIDTH, NO IMAGE -->
         <section class="subpage-hero">
             <div class="container">
-                <div class="subpage-hero-grid">
-                    <div class="subpage-hero-content">
-                        <div class="breadcrumb">
-                            <a href="index.html">Home</a>
-                            <span>/</span>
-                            <span>Contact Us</span>
-                        </div>
-                        <h1 class="subpage-hero-title">
-                            Contact<br><em>ShipChandler</em><br>Montenegro
-                        </h1>
-                        <p class="subpage-hero-desc">
-                            Our operations desk is on call 24 hours a day, 7 days a week, 365 days a year — supporting
-                            merchant vessels calling at the Port of Bar and all Montenegrin anchorages.
-                        </p>
-                        <div class="subpage-hero-tags">
-                            <span>24/7 Desk</span>
-                            <span>Port of Bar</span>
-                            <span>IMPA Certified</span>
-                        </div>
+                <div class="subpage-hero-content">
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span>/</span>
+                        <span>Contact Us</span>
                     </div>
+                    <h1 class="subpage-hero-title">
+                        Contact <em>ShipChandler</em><br>Montenegro
+                    </h1>
 
-                    <div class="subpage-hero-media">
-                        <img src="assets/imgs/germany-hamburg-ships.jpg" alt="Port of Bar, Montenegro">
-                        <div class="subpage-hero-label">
-                            <i class="fas fa-headset"></i>
-                            24/7 Communications Desk · Bar
+                    <div class="subpage-hero-bottom">
+                        <p class="subpage-hero-desc">
+                            Reach us
+                            directly via WhatsApp, email or by submitting a requisition through the secure form below,
+                            and our team will respond promptly with a tailored quotation.
+                        </p>
+
+                        <div class="subpage-hero-meta">
+                            <div class="subpage-hero-meta-row">
+                                <i class="fas fa-headset"></i>
+                                <span>24/7 Communications Desk</span>
+                            </div>
+                            <div class="subpage-hero-meta-row">
+                                <i class="fas fa-anchor"></i>
+                                <span><strong>Port of Bar</strong> · Montenegro</span>
+                            </div>
+                            <div class="subpage-hero-meta-row">
+                                <i class="fas fa-certificate"></i>
+                                <span>IMPA Certified</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1799,13 +1759,12 @@
         </section>
 
         <!-- CONTACT LAYOUT -->
-        <section class="section" style="padding-top: 20px;">
+        <section class="section" style="padding-top: 60px;">
             <div class="container contact-layout">
 
                 <!-- LEFT: Stacked profile cards -->
                 <div class="contact-stack reveal">
 
-                    <!-- WhatsApp -->
                     <div class="contact-card whatsapp">
                         <div class="contact-card-icon">
                             <i class="fab fa-whatsapp"></i>
@@ -1820,7 +1779,6 @@
                         </div>
                     </div>
 
-                    <!-- Email -->
                     <div class="contact-card">
                         <div class="contact-card-icon">
                             <i class="fas fa-envelope"></i>
@@ -1834,7 +1792,6 @@
                         </div>
                     </div>
 
-                    <!-- Person -->
                     <div class="contact-card">
                         <div class="contact-card-icon">
                             <i class="fas fa-user-tie"></i>
@@ -1842,11 +1799,10 @@
                         <div class="contact-card-body">
                             <div class="contact-card-label">Key Contact</div>
                             <div class="contact-card-value">Marko Jovanović</div>
-                            <div class="contact-card-sub">Operations & vessel supply desk</div>
+                            <!-- <div class="contact-card-sub">Operations & vessel supply desk</div> -->
                         </div>
                     </div>
 
-                    <!-- Address -->
                     <div class="contact-card">
                         <div class="contact-card-icon">
                             <i class="fas fa-map-marker-alt"></i>
@@ -1974,7 +1930,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a class="logo" href="index.html">
-                        <img src="assets/imgs/logo-shipchandler-malta.png" alt="Logo" width="42" height="42">
+                        <img src="assets/imgs/logo.jpg" alt="Logo" width="42" height="42">
                         <span class="logo-text">
                             <strong>ShipChandler</strong>
                             <span style="color: var(--accent);">Montenegro</span>
