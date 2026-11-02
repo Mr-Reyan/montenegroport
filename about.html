@@ -4,66 +4,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>About Us | Ship Chandler Germany - Professional Marine Supply Services</title>
+  <title>About Us | Ship Chandler Montenegro - Port of Bar Marine Supply</title>
   <meta name="description"
-    content="About Ship Chandler Germany CO., LTD: Leading ship chandler at Port of Hamburg providing food provisions, bonded stores, vessel supply across all German ports.">
+    content="About Ship Chandler Montenegro CO., LTD: Leading ship chandler at Port of Bar providing food provisions, bonded stores, vessel supply across all Montenegrin ports.">
   <meta name="keywords"
-    content="about ship chandler germany, hamburg port supplier, germany marine supply company, vessel provisioning germany, ship chandlers hamburg port services, food provision supplier, bonded stores germany">
-  <meta name="author" content="Ship Chandler Germany CO., LTD">
-  <link rel="canonical" href="https://shipchandlergermany.com/about.html">
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="About Ship Chandler Germany - Professional Marine Supply">
+    content="about ship chandler montenegro, bar port supplier, montenegro marine supply company, vessel provisioning montenegro, ship chandlers bar port services, food provision supplier, bonded stores montenegro">
+  <meta name="author" content="SHIP CHANDLER MONTENEGRO CO., LTD">
+  <link rel="canonical" href="https://shipchandlermontenegro.com/about.html">
+  <meta property="og:title" content="About Ship Chandler Montenegro - Professional Marine Supply">
   <meta property="og:description"
-    content="Leading ship chandler at Port of Hamburg providing comprehensive vessel supply services. Food provisions, bonded stores & marine equipment.">
+    content="Leading ship chandler at Port of Bar providing comprehensive vessel supply services. Food provisions, bonded stores & marine equipment.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://shipchandlergermany.com/about.html">
-
-  <!-- Google Fonts: Editorial + Monospace -->
+  <meta property="og:url" content="https://shipchandlermontenegro.com/about.html">
+  <meta property="og:site_name" content="Ship Chandler Montenegro">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Ship Chandler Montenegro - Port of Bar Marine Supply">
+  <meta name="twitter:description"
+    content="Leading ship chandler at Port of Bar providing comprehensive vessel supply services across Montenegro.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500;600&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&display=swap"
     rel="stylesheet">
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="assets/imgs/favicon.png">
-
   <style>
-    /* =========================================
-       EDITORIAL THEME VARIABLES (Same as Index)
-    ========================================= */
     :root {
-      --paper: #F7F5F0;
-      --ink: #0A1A2B;
-      --ink-soft: #1E3448;
-      --ice: #4A9EC9;
-      --ice-deep: #2A6F97;
-      --ice-ghost: #E3F0F8;
-      --acid: #C5F04A;
-      --gray-warm: #6B6B63;
-      --gray-cool: #8A9BAE;
-      --line: #D8D5CC;
+      --accent: #6B1E3A;
+      --accent-light: #8A2A4A;
+      --accent-soft: #F5E8EE;
+      --accent-faint: rgba(107, 30, 58, 0.08);
 
-      --font-body: 'Manrope', sans-serif;
-      --font-display: 'Instrument Serif', serif;
-      --font-mono: 'JetBrains Mono', monospace;
+      --bg-page: #F7F3F0;
+      --bg-cream: #FBF8F5;
+      --bg-cream-2: #F2EDE9;
+      --surface-white: #FFFFFF;
 
-      --radius: 0px;
-      --radius-pill: 9999px;
-      --radius-soft: 4px;
+      --text: #1F1619;
+      --text-soft: #4A3A40;
+      --text-muted: #8A7A80;
 
-      --shadow-flat: 4px 4px 0 var(--ink);
-      --shadow-soft: 0 1px 0 rgba(10, 26, 43, 0.08);
+      --shadow-soft: 0 20px 60px rgba(74, 20, 40, 0.10);
+      --shadow-card: 0 10px 40px rgba(74, 20, 40, 0.06);
+      --shadow-float: 0 24px 60px rgba(74, 20, 40, 0.14);
 
-      --ease: cubic-bezier(0.2, 0.9, 0.3, 1);
-      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-      --transition: all 0.35s var(--ease);
-      --transition-slow: all 0.7s var(--ease-out);
+      --radius-sm: 8px;
+      --radius: 18px;
+      --radius-lg: 28px;
+      --radius-xl: 48px;
+
+      --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --font-display: 'Fraunces', Georgia, serif;
+
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --transition: all 0.4s var(--ease);
     }
 
     *,
@@ -80,12 +74,36 @@
 
     body {
       font-family: var(--font-body);
-      color: var(--ink);
-      background-color: var(--paper);
-      line-height: 1.55;
+      color: var(--text);
+      background: var(--bg-page);
+      line-height: 1.6;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
       font-weight: 400;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background:
+        radial-gradient(ellipse 70% 50% at 8% 0%, rgba(245, 232, 238, 0.9), transparent 60%),
+        radial-gradient(ellipse 60% 50% at 92% 15%, rgba(250, 240, 235, 0.8), transparent 60%),
+        radial-gradient(ellipse 80% 60% at 50% 100%, rgba(242, 237, 233, 1), transparent 70%),
+        var(--bg-page);
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      opacity: 0.05;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     }
 
     a {
@@ -109,11 +127,10 @@
       max-width: 1320px;
       margin: 0 auto;
       padding: 0 32px;
+      position: relative;
+      z-index: 1;
     }
 
-    /* =========================================
-       TYPOGRAPHY
-    ========================================= */
     h1,
     h2,
     h3,
@@ -122,130 +139,89 @@
     h6 {
       font-family: var(--font-display);
       font-weight: 400;
-      line-height: 0.98;
-      color: var(--ink);
+      line-height: 1.05;
       letter-spacing: -0.02em;
+      color: var(--text);
     }
 
-    .mono-label {
-      font-family: var(--font-mono);
+    .eyebrow {
+      font-family: var(--font-body);
       font-size: 0.7rem;
-      font-weight: 500;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.18em;
-      color: var(--ice-deep);
+      letter-spacing: 0.28em;
+      color: var(--accent-light);
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }
 
-    .mono-label::before {
+    .eyebrow::before {
       content: '';
-      width: 8px;
-      height: 8px;
-      background: var(--acid);
-      display: inline-block;
-      border-radius: 50%;
+      width: 28px;
+      height: 1px;
+      background: var(--accent-light);
     }
 
-    /* =========================================
-       BUTTONS
-    ========================================= */
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 16px 36px;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
+      gap: 12px;
+      padding: 16px 32px;
+      font-family: var(--font-body);
+      font-size: 0.78rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.14em;
-      border-radius: var(--radius-pill);
-      border: 1.5px solid var(--ink);
+      border-radius: 4px;
       cursor: pointer;
       transition: var(--transition);
-      gap: 12px;
+      border: none;
       position: relative;
       overflow: hidden;
-      background: transparent;
-      color: var(--ink);
     }
 
-    .btn-primary {
-      background: var(--ink);
-      color: var(--paper);
-      border-color: var(--ink);
+    .btn-solid {
+      background: var(--accent);
+      color: #FFF;
+      box-shadow: 0 10px 30px rgba(107, 30, 58, 0.22);
     }
 
-    .btn-primary:hover {
-      background: var(--acid);
-      color: var(--ink);
-      border-color: var(--acid);
-      transform: translate(-2px, -2px);
-      box-shadow: 4px 4px 0 var(--ink);
+    .btn-solid:hover {
+      background: var(--accent-light);
+      transform: translateY(-2px);
+      box-shadow: 0 16px 40px rgba(107, 30, 58, 0.28);
     }
 
     .btn-outline {
       background: transparent;
-      border: 1.5px solid var(--ink);
-      color: var(--ink);
+      color: var(--text);
+      border: 1px solid rgba(31, 22, 25, 0.2);
     }
 
     .btn-outline:hover {
-      background: var(--ink);
-      color: var(--paper);
-      transform: translate(-2px, -2px);
-      box-shadow: 4px 4px 0 var(--ice);
+      background: var(--surface-white);
+      border-color: rgba(31, 22, 25, 0.4);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-card);
     }
 
-    /* =========================================
-       TOP BAR
-    ========================================= */
-    .top-bar {
-      background: var(--ink);
-      color: var(--paper);
-      padding: 10px 0;
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-    .top-bar .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .top-bar a {
-      color: var(--acid);
-      font-weight: 600;
-    }
-
-    .top-bar a:hover {
-      text-decoration: underline;
-    }
-
-    /* =========================================
-       HEADER / NAVBAR
-    ========================================= */
+    /* HEADER */
     .site-header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: var(--paper);
-      border-bottom: 1px solid var(--line);
+      background: rgba(251, 248, 245, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(31, 22, 25, 0.06);
       transition: var(--transition);
     }
 
     .site-header.scrolled {
-      background: rgba(247, 245, 240, 0.96);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      box-shadow: 0 1px 0 var(--line);
+      background: rgba(251, 248, 245, 0.96);
+      box-shadow: 0 4px 30px rgba(74, 20, 40, 0.06);
     }
 
     .header-inner {
@@ -262,8 +238,9 @@
     }
 
     .logo img {
-      height: 44px;
+      height: 42px;
       width: auto;
+      border-radius: 6px;
     }
 
     .logo-text {
@@ -274,20 +251,19 @@
     }
 
     .logo-text strong {
-      font-size: 1.1rem;
-      color: var(--ink);
+      font-size: 1.05rem;
+      color: var(--text);
       font-weight: 800;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.02em;
     }
 
     .logo-text span {
-      font-family: var(--font-mono);
-      font-size: 0.6rem;
-      color: var(--ice-deep);
-      font-weight: 500;
-      letter-spacing: 0.2em;
+      font-size: 0.58rem;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
-      margin-top: 3px;
+      margin-top: 5px;
     }
 
     .nav-toggle {
@@ -301,23 +277,24 @@
 
     .nav-toggle span {
       display: block;
-      width: 26px;
+      width: 24px;
       height: 2px;
-      background-color: var(--ink);
+      background: var(--text);
       transition: var(--transition);
-      margin: 6px 0;
+      margin: 5px 0;
+      border-radius: 1px;
     }
 
     .primary-nav {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 8px;
     }
 
     .nav-list {
       display: flex;
       align-items: center;
-      gap: 0;
+      gap: 2px;
     }
 
     .nav-item {
@@ -327,27 +304,27 @@
     .nav-link {
       display: flex;
       align-items: center;
-      gap: 8px;
-      padding: 12px 20px;
-      font-family: var(--font-mono);
+      gap: 6px;
+      padding: 9px 16px;
+      font-family: var(--font-body);
       font-size: 0.72rem;
-      font-weight: 500;
+      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: var(--ink-soft);
-      border-radius: var(--radius-pill);
+      color: var(--text-soft);
+      border-radius: 4px;
       transition: var(--transition);
     }
 
     .nav-link:hover,
     .nav-item.active .nav-link {
-      background: var(--ink);
-      color: var(--paper);
+      color: var(--accent);
+      background: var(--accent-faint);
     }
 
     .nav-arrow svg {
-      width: 10px;
-      height: 10px;
+      width: 9px;
+      height: 9px;
       transition: var(--transition);
     }
 
@@ -355,97 +332,82 @@
       transform: rotate(180deg);
     }
 
-    /* --- DROPDOWN / MEGA MENU FIXES --- */
     .nav-item.has-dropdown::after {
       content: '';
       position: absolute;
-      bottom: -20px;
+      bottom: -22px;
       left: 0;
       width: 100%;
-      height: 20px;
+      height: 22px;
       z-index: 998;
     }
 
     .dropdown-menu {
       position: absolute;
-      top: calc(100% + 16px);
+      top: calc(100% + 18px);
       left: 0;
-      background: var(--paper);
-      border: 1px solid var(--ink);
-      border-radius: var(--radius-soft);
-      box-shadow: 8px 8px 0 var(--ink);
-      padding: 0;
-      min-width: 280px;
-      max-height: 320px;
+      background: var(--surface-white);
+      border: 1px solid rgba(31, 22, 25, 0.08);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      padding: 8px;
+      min-width: 260px;
+      max-height: 340px;
       overflow-y: auto;
       opacity: 0;
       visibility: hidden;
-      transition: var(--transition-slow);
-      transform-origin: top left;
+      transform: translateY(8px);
+      transition: var(--transition);
       z-index: 999;
     }
 
     .dropdown-menu::-webkit-scrollbar {
-      width: 4px;
-    }
-
-    .dropdown-menu::-webkit-scrollbar-track {
-      background: var(--paper);
+      width: 3px;
     }
 
     .dropdown-menu::-webkit-scrollbar-thumb {
-      background: var(--ice);
-    }
-
-    .dropdown-menu {
-      scrollbar-width: thin;
-      scrollbar-color: var(--ice) var(--paper);
+      background: rgba(107, 30, 58, 0.2);
+      border-radius: 2px;
     }
 
     .nav-item:hover .dropdown-menu {
       opacity: 1;
       visibility: visible;
+      transform: translateY(0);
     }
 
     .dropdown-menu a {
       display: block;
-      padding: 12px 22px;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      font-weight: 400;
-      letter-spacing: 0.04em;
-      color: var(--ink-soft);
-      border-bottom: 1px solid var(--line);
+      padding: 10px 16px;
+      font-size: 0.76rem;
+      font-weight: 500;
+      color: var(--text-soft);
+      border-radius: 6px;
       transition: var(--transition);
     }
 
-    .dropdown-menu a:last-child {
-      border-bottom: none;
-    }
-
     .dropdown-menu a:hover {
-      background: var(--acid);
-      color: var(--ink);
-      padding-left: 28px;
+      background: var(--accent-faint);
+      color: var(--accent);
+      padding-left: 22px;
     }
 
     .mega-menu {
       position: fixed;
       left: 50%;
-      transform: translateX(-50%) translateY(14px);
-      background: var(--paper);
-      border: 1px solid var(--ink);
-      border-radius: var(--radius-soft);
-      box-shadow: 8px 8px 0 var(--ink);
+      transform: translateX(-50%) translateY(12px);
+      background: var(--surface-white);
+      border: 1px solid rgba(31, 22, 25, 0.08);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
       padding: 0;
-      min-width: 860px;
+      min-width: 880px;
       max-width: 95vw;
       max-height: 70vh;
       overflow-y: auto;
       opacity: 0;
       visibility: hidden;
-      transition: var(--transition-slow);
-      transform-origin: top center;
+      transition: var(--transition);
       z-index: 999;
     }
 
@@ -453,17 +415,9 @@
       width: 3px;
     }
 
-    .mega-menu::-webkit-scrollbar-track {
-      background: var(--paper);
-    }
-
     .mega-menu::-webkit-scrollbar-thumb {
-      background: var(--ice);
-    }
-
-    .mega-menu {
-      scrollbar-width: thin;
-      scrollbar-color: var(--ice) var(--paper);
+      background: rgba(107, 30, 58, 0.2);
+      border-radius: 2px;
     }
 
     .nav-item:hover .mega-menu {
@@ -476,65 +430,60 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 0;
-      padding: 20px 28px;
-      border-bottom: 1px solid var(--ink);
-      background: var(--ice-ghost);
+      padding: 20px 26px;
+      border-bottom: 1px solid rgba(31, 22, 25, 0.06);
+      background: var(--bg-cream);
       position: sticky;
       top: 0;
       z-index: 2;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     }
 
     .mega-header-title {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      font-weight: 600;
+      font-size: 0.72rem;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--ink);
+      letter-spacing: 0.18em;
+      color: var(--accent);
     }
 
     .mega-search {
       display: flex;
       align-items: center;
       gap: 8px;
-      background: var(--paper);
-      border: 1px solid var(--ink);
+      background: var(--surface-white);
+      border: 1px solid rgba(31, 22, 25, 0.1);
       padding: 8px 16px;
-      border-radius: var(--radius-pill);
+      border-radius: 40px;
     }
 
-    .mega-search svg {
-      width: 14px;
-      height: 14px;
-      color: var(--ink-soft);
+    .mega-search i {
+      font-size: 12px;
+      color: var(--text-muted);
     }
 
     .mega-search input {
       border: none;
       background: transparent;
-      font-size: 0.75rem;
+      font-size: 0.74rem;
       outline: none;
       width: 180px;
-      font-family: var(--font-mono);
-      color: var(--ink);
-      letter-spacing: 0.04em;
+      font-family: var(--font-body);
+      color: var(--text);
     }
 
     .mega-search input::placeholder {
-      color: var(--gray-cool);
-      opacity: 0.8;
+      color: var(--text-muted);
     }
 
     .mega-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 0;
-      padding: 0;
     }
 
     .mega-group {
-      border-right: 1px solid var(--line);
+      border-right: 1px solid rgba(31, 22, 25, 0.05);
     }
 
     .mega-group:last-child {
@@ -542,412 +491,676 @@
     }
 
     .mega-group h4 {
-      font-family: var(--font-mono);
-      font-size: 0.62rem;
+      font-family: var(--font-body);
+      font-size: 0.58rem;
       text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--ice-deep);
-      padding: 16px 24px 10px;
-      background: var(--paper);
-      border-bottom: 1px solid var(--line);
+      letter-spacing: 0.16em;
+      color: var(--accent);
+      padding: 14px 24px 10px;
+      border-bottom: 1px solid rgba(31, 22, 25, 0.05);
     }
 
     .mega-group a {
       display: block;
       padding: 8px 24px;
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      color: var(--ink-soft);
+      font-size: 0.72rem;
+      color: var(--text-soft);
       transition: var(--transition);
-      border-bottom: 1px solid rgba(216, 213, 204, 0.5);
+      border-bottom: 1px solid rgba(31, 22, 25, 0.03);
     }
 
     .mega-group a:hover {
-      background: var(--acid);
-      color: var(--ink);
-      padding-left: 32px;
+      background: var(--accent-faint);
+      color: var(--accent);
+      padding-left: 30px;
     }
 
     /* =========================================
-       SUBPAGE HERO
+       SUBPAGE HERO — LIGHT EDITORIAL
     ========================================= */
     .subpage-hero {
       position: relative;
-      background: var(--ink);
-      color: var(--paper);
+      padding: 60px 0 80px;
       overflow: hidden;
-      min-height: 60vh;
-      display: flex;
-      align-items: stretch;
     }
 
-    .subpage-hero-split {
+    .subpage-hero-grid {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
-      width: 100%;
-      min-height: 60vh;
-    }
-
-    .subpage-hero-left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 80px 60px 80px 0;
-      position: relative;
-      z-index: 2;
-    }
-
-    .subpage-hero-left .container-inner {
-      padding-left: 32px;
+      gap: 50px;
+      align-items: center;
     }
 
     .breadcrumb {
       display: flex;
       align-items: center;
       gap: 10px;
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
+      font-size: 0.68rem;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--gray-cool);
+      letter-spacing: 0.14em;
+      color: var(--text-muted);
       margin-bottom: 30px;
     }
 
     .breadcrumb a {
-      color: var(--ice);
+      color: var(--accent);
     }
 
     .breadcrumb a:hover {
-      color: var(--acid);
+      color: var(--accent-light);
     }
 
     .subpage-hero-title {
-      font-size: clamp(3rem, 6vw, 5rem);
-      line-height: 0.9;
-      color: var(--paper);
+      font-size: clamp(3rem, 6vw, 5.2rem);
+      line-height: 0.98;
+      color: var(--text);
+      font-weight: 300;
       margin-bottom: 24px;
     }
 
     .subpage-hero-title em {
       font-style: italic;
-      color: var(--ice);
+      color: var(--accent);
+      font-weight: 400;
     }
 
     .subpage-hero-desc {
-      font-size: 1.1rem;
-      color: var(--ice-ghost);
-      max-width: 500px;
-      line-height: 1.7;
-      font-weight: 300;
-      opacity: 0.9;
+      font-size: 1rem;
+      color: var(--text-soft);
+      max-width: 520px;
+      line-height: 1.75;
+      font-weight: 400;
+      margin-bottom: 32px;
     }
 
-    .subpage-hero-right {
-      position: relative;
-      overflow: hidden;
-      background: var(--ice-deep);
+    .subpage-hero-tags {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 0.66rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
     }
 
-    .subpage-hero-right::after {
+    .subpage-hero-tags span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .subpage-hero-tags span::before {
       content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(10, 26, 43, 0.4) 0%, rgba(10, 26, 43, 0.8) 100%);
-      z-index: 1;
+      width: 5px;
+      height: 5px;
+      background: var(--accent-light);
+      border-radius: 50%;
     }
 
-    .subpage-hero-right img {
+    .subpage-hero-media {
+      position: relative;
+      width: 100%;
+      max-width: 480px;
+      aspect-ratio: 4/5;
+      border-radius: var(--radius-xl) var(--radius-sm) var(--radius-xl) var(--radius-sm);
+      overflow: hidden;
+      border: 1px solid rgba(31, 22, 25, 0.08);
+      box-shadow: var(--shadow-soft);
+      justify-self: flex-end;
+    }
+
+    .subpage-hero-media img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: grayscale(40%) contrast(1.1);
+      filter: saturate(0.85) contrast(1.02) brightness(1.02);
+      transition: var(--transition);
     }
 
-    .hero-side-label {
+    .subpage-hero-media:hover img {
+      transform: scale(1.04);
+    }
+
+    .subpage-hero-media::after {
+      content: '';
       position: absolute;
-      right: -20px;
-      top: 50%;
-      transform: rotate(90deg) translateY(-50%);
-      transform-origin: right center;
-      font-family: var(--font-mono);
-      font-size: 0.62rem;
-      letter-spacing: 0.4em;
-      text-transform: uppercase;
-      color: var(--ice);
-      z-index: 3;
-      white-space: nowrap;
-      opacity: 0.6;
+      inset: 0;
+      background: linear-gradient(to top, rgba(31, 22, 25, 0.3), transparent 55%);
     }
 
-    /* =========================================
-       SECTION UTILITIES
-    ========================================= */
+    .subpage-hero-label {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      background: var(--surface-white);
+      border: 1px solid rgba(31, 22, 25, 0.08);
+      border-radius: var(--radius);
+      padding: 12px 18px;
+      box-shadow: var(--shadow-card);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.66rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      z-index: 2;
+    }
+
+    .subpage-hero-label i {
+      color: var(--accent-light);
+      font-size: 0.9rem;
+    }
+
+    /* SECTION UTILITIES */
     .section {
-      padding: 120px 0;
+      padding: 100px 0;
       position: relative;
     }
 
-    .section-paper {
-      background: var(--paper);
-    }
-
-    .section-ink {
-      background: var(--ink);
-      color: var(--paper);
-    }
-
-    .section-ice {
-      background: var(--ice-ghost);
-    }
-
     .section-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      gap: 40px;
-      margin-bottom: 70px;
-      flex-wrap: wrap;
-    }
-
-    .section-head-left {
-      max-width: 700px;
+      margin-bottom: 64px;
+      max-width: 760px;
     }
 
     .section-head h2 {
-      font-size: clamp(2.6rem, 5vw, 4.2rem);
-      line-height: 0.95;
-      margin-top: 12px;
+      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+      font-weight: 300;
+      line-height: 1.05;
+      margin-top: 18px;
+      color: var(--text);
     }
 
     .section-head h2 em {
       font-style: italic;
-      color: var(--ice-deep);
+      color: var(--accent);
     }
 
     .section-head p {
-      font-size: 1rem;
-      color: var(--gray-warm);
-      font-weight: 300;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-weight: 400;
       line-height: 1.7;
-      max-width: 420px;
-    }
-
-    .section-ink .section-head p {
-      color: var(--ice-ghost);
-      opacity: 0.8;
-    }
-
-    .section-ink .section-head h2 em {
-      color: var(--acid);
-    }
-
-    /* Scroll Reveal */
-    .reveal {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.9s var(--ease-out);
-    }
-
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
+      margin-top: 20px;
+      max-width: 520px;
     }
 
     /* =========================================
-       SPLIT CONTENT SECTION
+       INTRO SPLIT — WHITE PANEL
     ========================================= */
-    .split {
+    .intro-strip {
+      padding: 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .intro-panel {
+      background: var(--surface-white);
+      border-radius: var(--radius-xl);
+      padding: 90px 60px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(31, 22, 25, 0.06);
+      box-shadow: var(--shadow-soft);
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
       align-items: center;
     }
 
-    .split-copy .mono-label {
-      margin-bottom: 20px;
+    .intro-panel::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.04;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     }
 
-    .split-copy h2 {
-      font-size: clamp(2.5rem, 4vw, 3.5rem);
-      line-height: 1;
-      margin-bottom: 24px;
+    .intro-panel::after {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 232, 238, 0.9), transparent 70%);
+      pointer-events: none;
     }
 
-    .split-copy h2 em {
-      font-style: italic;
-      color: var(--ice-deep);
-    }
-
-    .split-copy p {
-      font-size: 1rem;
-      color: var(--gray-warm);
-      margin-bottom: 20px;
-      line-height: 1.7;
-      font-weight: 300;
-    }
-
-    .split-media {
+    .intro-copy {
       position: relative;
-      border-radius: var(--radius-soft);
+      z-index: 1;
+    }
+
+    .intro-copy h2 {
+      font-size: clamp(2rem, 3.4vw, 2.8rem);
+      font-weight: 300;
+      line-height: 1.1;
+      margin: 20px 0 24px;
+    }
+
+    .intro-copy h2 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .intro-copy p {
+      font-size: 0.98rem;
+      color: var(--text-soft);
+      line-height: 1.8;
+      margin-bottom: 18px;
+      font-weight: 400;
+    }
+
+    .intro-copy .btn {
+      margin-top: 20px;
+    }
+
+    .intro-media {
+      position: relative;
+      z-index: 1;
+      border-radius: var(--radius-lg);
       overflow: hidden;
-      border: 1px solid var(--line);
-      box-shadow: 8px 8px 0 var(--ice-ghost);
-      transition: var(--transition);
+      border: 1px solid rgba(31, 22, 25, 0.06);
+      box-shadow: var(--shadow-card);
+      aspect-ratio: 4/5;
     }
 
-    .split-media:hover {
-      transform: translate(-2px, -2px);
-      box-shadow: 12px 12px 0 var(--ice-ghost);
-    }
-
-    .split-media img {
+    .intro-media img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      aspect-ratio: 4/3;
+      filter: saturate(0.9) contrast(1.02);
+      transition: var(--transition);
+    }
+
+    .intro-media:hover img {
+      transform: scale(1.03);
     }
 
     /* =========================================
-       WHY CHOOSE US (Exact Index Grid Style)
+       WHY US — IRREGULAR BENTO MOSAIC (matches index)
     ========================================= */
-    .why-list {
+    .why-bento {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-      border-top: 1px solid var(--line);
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: minmax(120px, auto);
+      gap: 16px;
     }
 
-    .why-item {
-      display: flex;
-      gap: 24px;
-      padding: 32px 32px 32px 0;
-      border-bottom: 1px solid var(--line);
-      transition: var(--transition);
+    .why-tile {
       position: relative;
-      align-items: flex-start;
-    }
-
-    .why-item:nth-child(odd) {
-      border-right: 1px solid var(--line);
-      padding-right: 48px;
-    }
-
-    .why-item:nth-child(even) {
-      padding-left: 48px;
-    }
-
-    .why-item:hover {
-      background: var(--ice-ghost);
-    }
-
-    .why-item:hover .why-num {
-      color: var(--acid);
-      transform: translateX(4px);
-    }
-
-    .why-num {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      font-weight: 600;
-      color: var(--ice-deep);
-      letter-spacing: 0.06em;
+      padding: 26px 24px;
+      border-radius: var(--radius);
+      background: var(--surface-white);
+      border: 1px solid rgba(31, 22, 25, 0.07);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
       transition: var(--transition);
-      min-width: 34px;
-      padding-top: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 150px;
     }
 
-    .why-content h3 {
-      font-family: var(--font-body);
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-      color: var(--ink);
-      letter-spacing: -0.02em;
+    .why-tile::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at var(--mx, 30%) var(--my, 20%), rgba(245, 232, 238, 0.9), transparent 55%);
+      opacity: 0;
+      transition: var(--transition);
+      pointer-events: none;
     }
 
-    .why-content p {
-      font-size: 0.9rem;
-      color: var(--gray-warm);
-      line-height: 1.6;
+    .why-tile:hover::before {
+      opacity: 1;
+    }
+
+    .why-tile:hover {
+      transform: translateY(-4px) scale(1.01);
+      border-color: rgba(107, 30, 58, 0.2);
+      box-shadow: 0 20px 50px rgba(74, 20, 40, 0.12);
+    }
+
+    .why-tile .tile-index {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
       font-weight: 300;
-    }
-
-    /* =========================================
-       CTA SECTION
-    ========================================= */
-    .cta-section {
-      background: var(--ink);
-      padding: 80px 0;
-      text-align: center;
-      border-radius: var(--radius-soft) var(--radius-soft) 0 0;
-    }
-
-    .cta-section h2 {
-      color: var(--paper);
-      font-size: clamp(2rem, 4vw, 3rem);
-      margin-bottom: 16px;
-    }
-
-    .cta-section p {
-      color: var(--ice-ghost);
-      margin-bottom: 32px;
-      font-size: 1.1rem;
-      font-weight: 300;
+      color: var(--accent-light);
+      letter-spacing: 0.08em;
       opacity: 0.8;
     }
 
-    .cta-section .btn-primary {
-      background: var(--acid);
-      color: var(--ink);
-      border-color: var(--acid);
+    .why-tile .tile-num-bg {
+      position: absolute;
+      top: -10px;
+      right: 6px;
+      font-family: var(--font-display);
+      font-size: 5.5rem;
+      font-weight: 300;
+      line-height: 1;
+      color: rgba(31, 22, 25, 0.04);
+      pointer-events: none;
+      transition: var(--transition);
     }
 
-    .cta-section .btn-primary:hover {
-      background: var(--paper);
-      color: var(--ink);
-      border-color: var(--paper);
-      box-shadow: 4px 4px 0 var(--acid);
+    .why-tile:hover .tile-num-bg {
+      color: rgba(245, 232, 238, 0.9);
+      transform: scale(1.08);
+    }
+
+    .why-tile h3 {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .why-tile p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      font-weight: 400;
+      position: relative;
+      z-index: 1;
+    }
+
+    .why-tile.span-2 {
+      grid-column: span 2;
+    }
+
+    .why-tile.span-3 {
+      grid-column: span 3;
+    }
+
+    .why-tile.tall {
+      grid-row: span 2;
+    }
+
+    .why-tile.feature {
+      background: var(--bg-cream);
+      border-color: rgba(107, 30, 58, 0.12);
+    }
+
+    .why-tile.feature::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 24px;
+      right: 24px;
+      height: 3px;
+      border-radius: 3px 3px 0 0;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      opacity: 0.75;
+    }
+
+    .why-tile.feature h3 {
+      color: var(--text);
+    }
+
+    .why-tile.feature p {
+      color: var(--text-soft);
+    }
+
+    .why-tile.feature .tile-index {
+      color: var(--accent);
+      opacity: 1;
+    }
+
+    .why-tile.feature .tile-num-bg {
+      color: rgba(107, 30, 58, 0.06);
+    }
+
+    .why-tile.feature:hover::before {
+      opacity: 0;
+    }
+
+    .why-tile.feature:hover {
+      border-color: rgba(107, 30, 58, 0.28);
+      box-shadow: 0 24px 60px rgba(74, 20, 40, 0.14);
     }
 
     /* =========================================
-       FOOTER
+       QUOTE CTA — DARK BURGUNDY SHOWCASE
     ========================================= */
-    .site-footer {
-      background: var(--ink);
-      color: var(--paper);
-      padding: 0;
+    .quote-cta {
+      padding: 0 0 100px;
+      position: relative;
+      z-index: 2;
     }
 
-    .footer-top {
+    .quote-cta-inner {
+      position: relative;
+      border-radius: var(--radius-xl);
+      padding: 90px 72px;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 60% 80% at 85% 15%, rgba(138, 42, 74, 0.55), transparent 60%),
+        radial-gradient(ellipse 70% 70% at 10% 100%, rgba(74, 20, 40, 0.85), transparent 65%),
+        linear-gradient(135deg, #4A1428 0%, #6B1E3A 100%);
+      color: #FFF;
+      box-shadow: 0 40px 100px rgba(74, 20, 40, 0.3);
       display: grid;
-      grid-template-columns: 1.6fr 1fr 1fr 1.4fr;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .quote-cta-inner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.08;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    .quote-cta-inner::after {
+      content: '';
+      position: absolute;
+      top: -120px;
+      right: -80px;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      pointer-events: none;
+    }
+
+    .quote-cta-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .quote-cta .eyebrow {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .quote-cta .eyebrow::before {
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .quote-cta h2 {
+      font-size: clamp(2.2rem, 4vw, 3.6rem);
+      font-weight: 300;
+      line-height: 1.05;
+      margin-top: 20px;
+      color: #FFF;
+      letter-spacing: -0.02em;
+    }
+
+    .quote-cta h2 em {
+      font-style: italic;
+      color: #F5D9B8;
+      font-weight: 400;
+    }
+
+    .quote-cta-desc {
+      font-size: 0.98rem;
+      line-height: 1.75;
+      color: rgba(255, 255, 255, 0.78);
+      margin-top: 22px;
+      max-width: 460px;
+      font-weight: 400;
+    }
+
+    .quote-cta-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      margin-top: 36px;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.55);
+      font-weight: 600;
+    }
+
+    .quote-cta-meta span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .quote-cta-meta span::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      background: #F5D9B8;
+      border-radius: 50%;
+    }
+
+    .quote-cta-actions {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .btn-quote-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 24px 32px;
+      background: #FFF;
+      color: var(--accent);
+      border-radius: var(--radius);
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      transition: var(--transition);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+      border: 1px solid transparent;
+    }
+
+    .btn-quote-primary:hover {
+      transform: translateY(-3px);
+      background: #F5D9B8;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-quote-primary .btn-arrow-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      color: #FFF;
+      border-radius: 50%;
+      font-size: 0.9rem;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    .btn-quote-primary:hover .btn-arrow-icon {
+      transform: translateX(4px);
+      background: var(--accent-light);
+    }
+
+    .quote-cta-secondary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 18px 28px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFF;
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      transition: var(--transition);
+    }
+
+    .quote-cta-secondary:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .quote-cta-secondary i {
+      color: #25D366;
+      font-size: 1rem;
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background: var(--bg-cream-2);
+      border-top: 1px solid rgba(31, 22, 25, 0.06);
+      padding: 0;
+      position: relative;
+      z-index: 1;
+      color: var(--text);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.4fr;
       gap: 48px;
       padding: 80px 0 60px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-brand .logo {
+      margin-bottom: 22px;
     }
 
     .footer-brand .logo-text strong {
-      color: var(--paper);
+      color: var(--text);
     }
 
     .footer-brand p {
-      margin-top: 24px;
-      font-size: 0.9rem;
-      line-height: 1.7;
-      color: var(--ice-ghost);
-      opacity: 0.7;
-      font-weight: 300;
-      max-width: 320px;
+      font-size: 0.85rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+      font-weight: 400;
+      max-width: 300px;
     }
 
     .footer-col h4 {
-      font-family: var(--font-mono);
-      font-size: 0.65rem;
-      font-weight: 600;
+      font-family: var(--font-body);
+      font-size: 0.62rem;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--acid);
-      margin-bottom: 28px;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      margin-bottom: 24px;
     }
 
     .footer-links {
@@ -957,108 +1170,62 @@
     }
 
     .footer-links a {
-      color: var(--ice-ghost);
-      opacity: 0.6;
-      font-size: 0.88rem;
-      font-weight: 300;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 400;
       transition: var(--transition);
-      font-family: var(--font-body);
     }
 
     .footer-links a:hover {
-      color: var(--paper);
-      opacity: 1;
-      padding-left: 6px;
+      color: var(--accent);
+      padding-left: 4px;
     }
 
     .footer-contact li {
       display: flex;
       gap: 14px;
       margin-bottom: 18px;
-      font-size: 0.88rem;
-      color: var(--ice-ghost);
-      opacity: 0.7;
-      font-weight: 300;
+      font-size: 0.84rem;
+      color: var(--text-muted);
       align-items: flex-start;
-      line-height: 1.5;
+      line-height: 1.6;
+      font-weight: 400;
     }
 
     .footer-contact i {
-      color: var(--ice);
+      color: var(--accent-light);
       margin-top: 4px;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       width: 16px;
       flex-shrink: 0;
     }
 
     .footer-contact a {
       color: inherit;
-      transition: var(--transition);
     }
 
     .footer-contact a:hover {
-      color: var(--acid);
-      opacity: 1;
+      color: var(--accent);
     }
 
-    .footer-bottom {
-      padding: 28px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: var(--font-mono);
-      font-size: 0.65rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--gray-cool);
-      opacity: 0.5;
-    }
-
-    /* =========================================
-       FLOATING WHATSAPP
-    ========================================= */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 32px;
-      right: 32px;
-      width: 64px;
-      height: 64px;
-      background: #25D366;
-      color: #FFFFFF;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 32px;
-      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
-      z-index: 1000;
-      transition: var(--transition);
-    }
-
-    .whatsapp-float:hover {
-      transform: scale(1.1) rotate(10deg);
-    }
-
-    .hero-whatsapp-bar {
+    .footer-whatsapp {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       background: #0B132B;
-      padding: 10px 20px;
-      border-radius: 50px;
-      transition: var(--transition);
-      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 40px;
       border: 1px solid rgba(255, 209, 102, 0.15);
-      max-width: fit-content;
+      transition: var(--transition);
+      margin-top: 4px;
     }
 
-    .hero-whatsapp-bar:hover {
-      transform: translateX(5px);
-      box-shadow: 0 4px 12px rgba(255, 209, 102, 0.25);
-      border-color: rgba(255, 209, 102, 0.3);
+    .footer-whatsapp:hover {
+      border-color: rgba(255, 209, 102, 0.4);
+      transform: translateX(4px);
     }
 
-    .hero-whatsapp-icon {
+    .footer-whatsapp-icon {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1066,64 +1233,133 @@
       height: 28px;
       background: #25D366;
       border-radius: 50%;
-      color: white;
+      color: #FFF;
       flex-shrink: 0;
     }
 
-    .hero-whatsapp-icon svg {
-      width: 16px;
-      height: 16px;
+    .footer-whatsapp-icon svg {
+      width: 15px;
+      height: 15px;
     }
 
-    .hero-whatsapp-tag {
+    .footer-whatsapp-tag {
       color: #25D366;
       font-weight: 700;
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.08em;
     }
 
-    .hero-whatsapp-num {
+    .footer-whatsapp-num {
       color: #FFD166;
       font-weight: 700;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       white-space: nowrap;
     }
 
-    .hero-whatsapp-arrow {
+    .footer-whatsapp-arrow {
       color: #FFD166;
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-left: 4px;
+      font-size: 1rem;
+      margin-left: 2px;
     }
 
-    /* =========================================
-       RESPONSIVE DESIGN
-    ========================================= */
+    .footer-bottom {
+      padding: 26px 0;
+      border-top: 1px solid rgba(31, 22, 25, 0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .footer-bottom-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-bottom-right a:hover {
+      color: var(--accent);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      color: #FFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+      z-index: 1000;
+      transition: var(--transition);
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1) rotate(10deg);
+      box-shadow: 0 14px 40px rgba(37, 211, 102, 0.6);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* RESPONSIVE */
     @media (max-width: 1100px) {
-      .subpage-hero-split {
+      .subpage-hero-grid {
         grid-template-columns: 1fr;
+        gap: 48px;
       }
 
-      .subpage-hero-left {
-        padding: 60px 32px;
+      .subpage-hero-media {
+        max-width: 100%;
+        aspect-ratio: 16/10;
+        justify-self: flex-start;
       }
 
-      .subpage-hero-right {
-        min-height: 300px;
-      }
-
-      .hero-side-label {
-        display: none;
-      }
-
-      .split {
+      .intro-panel {
         grid-template-columns: 1fr;
         gap: 40px;
+        padding: 60px 36px;
       }
 
-      .split-media {
-        order: -1;
+      .intro-media {
+        aspect-ratio: 16/10;
+      }
+
+      .why-bento {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .why-tile.span-3 {
+        grid-column: span 2;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+      }
+
+      .quote-cta-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 70px 48px;
       }
     }
 
@@ -1138,15 +1374,16 @@
         right: -120%;
         width: 100%;
         height: 100vh;
-        background: var(--paper);
+        background: rgba(251, 248, 245, 0.98);
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
         flex-direction: column;
         padding: 110px 32px 40px;
         transition: var(--transition);
         overflow-y: auto;
         align-items: flex-start;
-        gap: 4px;
+        gap: 6px;
         z-index: 999;
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.08);
       }
 
       .primary-nav.open {
@@ -1167,15 +1404,14 @@
       .nav-link {
         width: 100%;
         justify-content: space-between;
-        padding: 16px 12px;
-        font-size: 0.85rem;
-        color: var(--ink);
-        border-radius: var(--radius-soft);
-        font-family: var(--font-mono);
+        padding: 16px 14px;
+        font-size: 0.88rem;
+        color: var(--text);
+        border-radius: 6px;
       }
 
       .nav-link:hover {
-        background: var(--ice-ghost);
+        background: var(--accent-faint);
       }
 
       .nav-item.has-dropdown::after {
@@ -1190,8 +1426,8 @@
         visibility: visible !important;
         box-shadow: none !important;
         border: none !important;
-        border-left: 1px solid var(--line) !important;
-        padding: 4px 0 4px 16px !important;
+        border-left: 2px solid rgba(107, 30, 58, 0.2) !important;
+        padding: 4px 0 4px 18px !important;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.4s ease;
@@ -1199,6 +1435,7 @@
         min-width: auto !important;
         width: 100% !important;
         background: transparent !important;
+        backdrop-filter: none !important;
         top: auto !important;
         left: auto !important;
         border-radius: 0;
@@ -1212,27 +1449,18 @@
       }
 
       .dropdown-menu a,
-      .mega-group a,
-      .mega-header-title,
-      .mega-group h4 {
-        color: var(--ink-soft) !important;
-      }
-
-      .dropdown-menu a,
       .mega-group a {
+        color: var(--text-soft) !important;
         padding: 10px 12px !important;
         margin: 2px 0 !important;
-        font-size: 0.72rem !important;
-        line-height: 1.5;
-        display: block;
-        font-weight: 400;
-        border-bottom: 1px solid var(--line) !important;
+        font-size: 0.78rem !important;
+        border-bottom: 1px solid rgba(31, 22, 25, 0.05) !important;
       }
 
       .dropdown-menu a:hover,
       .mega-group a:hover {
-        color: var(--ink) !important;
-        background: var(--acid);
+        color: var(--accent) !important;
+        background: var(--accent-faint);
       }
 
       .mega-header {
@@ -1240,17 +1468,19 @@
         margin-bottom: 8px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
-        border-bottom: 1px solid var(--line);
+        gap: 10px;
+        border-bottom: 1px solid rgba(31, 22, 25, 0.06);
         background: transparent;
         position: static;
+        backdrop-filter: none;
       }
 
       .mega-search {
         width: 100%;
-        background: var(--ice-ghost);
+        background: var(--surface-white);
         padding: 8px 14px;
-        border: 1px solid var(--line);
+        border: 1px solid rgba(31, 22, 25, 0.1);
+        position: static;
       }
 
       .mega-search input {
@@ -1264,25 +1494,27 @@
 
       .mega-group {
         border-right: none;
-        border-bottom: 1px solid var(--line);
+        border-bottom: 1px solid rgba(31, 22, 25, 0.05);
       }
 
       .mega-group h4 {
-        font-size: 0.6rem !important;
-        margin-bottom: 0;
+        font-size: 0.58rem !important;
         padding: 10px 12px;
-        border-bottom: 1px solid var(--line);
-        color: var(--ice-deep) !important;
-        background: var(--ice-ghost);
+        border-bottom: 1px solid rgba(31, 22, 25, 0.05);
+        background: transparent;
       }
 
-      .why-grid {
+      .why-bento {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .footer-top {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
+      .why-tile.span-2,
+      .why-tile.span-3 {
+        grid-column: span 2;
+      }
+
+      .why-tile.tall {
+        grid-row: span 1;
       }
     }
 
@@ -1291,45 +1523,82 @@
         padding: 0 20px;
       }
 
+      .subpage-hero {
+        padding: 40px 0 60px;
+      }
+
       .subpage-hero-title {
-        font-size: 3.2rem;
+        font-size: 2.6rem;
       }
 
-      .subpage-hero-left {
-        padding: 50px 20px;
+      .section {
+        padding: 70px 0;
       }
 
-      .why-grid {
+      .section-head h2 {
+        font-size: 2rem;
+      }
+
+      .intro-strip {
+        padding: 0 20px;
+      }
+
+      .intro-panel {
+        padding: 50px 26px;
+        border-radius: var(--radius-lg);
+      }
+
+      .footer-grid {
         grid-template-columns: 1fr;
-      }
-
-      .footer-top {
-        grid-template-columns: 1fr;
-        gap: 36px;
-        padding: 60px 0 40px;
+        gap: 32px;
+        padding: 56px 0 40px;
       }
 
       .footer-bottom {
         flex-direction: column;
+        text-align: center;
+      }
+
+      .why-bento {
+        grid-template-columns: 1fr;
+      }
+
+      .why-tile.span-2,
+      .why-tile.span-3 {
+        grid-column: span 1;
+      }
+
+      .why-tile .tile-num-bg {
+        font-size: 4.5rem;
+      }
+
+      .quote-cta {
+        padding: 0 20px 70px;
+      }
+
+      .quote-cta-inner {
+        padding: 56px 32px;
+        border-radius: var(--radius-lg);
+        gap: 36px;
+      }
+
+      .quote-cta-actions {
         gap: 12px;
-        text-align: center;
       }
 
-      .section {
-        padding: 80px 0;
+      .btn-quote-primary {
+        padding: 20px 26px;
+        font-size: 0.76rem;
       }
+    }
 
-      .section-head h2 {
+    @media (max-width: 480px) {
+      .subpage-hero-title {
         font-size: 2.2rem;
       }
 
-      .top-bar .container {
-        justify-content: center;
-        text-align: center;
-      }
-
-      .split-copy h2 {
-        font-size: 2.2rem;
+      .quote-cta-inner {
+        padding: 44px 24px;
       }
     }
   </style>
@@ -1337,23 +1606,14 @@
 
 <body>
 
-  <!-- TOP ANNOUNCEMENT BAR -->
-  <div class="top-bar">
-    <div class="container">
-      <span>Port of Hamburg · Germany · 24/7 Vessel Supply</span>
-      <span>Direct WhatsApp: <a href="https://wa.me/6590190005" target="_blank"
-          rel="noopener noreferrer">+65-9019-0005</a></span>
-    </div>
-  </div>
-
-  <!-- HEADER / NAVBAR -->
+  <!-- HEADER -->
   <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a class="logo" href="index.html">
-        <img src="assets/imgs/logo-shipchandler-germany.png" alt="ShipChandler Germany Logo" width="44" height="44">
+        <img src="assets/imgs/logo-shipchandler-malta.png" alt="ShipChandler Montenegro Logo" width="42" height="42">
         <span class="logo-text">
           <strong>ShipChandler</strong>
-          <span>Germany</span>
+          <span>Montenegro</span>
         </span>
       </a>
 
@@ -1366,7 +1626,6 @@
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
 
-          <!-- Services Dropdown -->
           <li class="nav-item has-dropdown">
             <a class="nav-link" href="services.html">Services <span class="nav-arrow"><svg viewBox="0 0 24 24"
                   width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
@@ -1390,7 +1649,6 @@
             </div>
           </li>
 
-          <!-- Ports Mega Menu -->
           <li class="nav-item has-dropdown">
             <a class="nav-link" href="javascript:void(0)">Ports <span class="nav-arrow"><svg viewBox="0 0 24 24"
                   width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
@@ -1401,20 +1659,17 @@
               <div class="mega-header">
                 <div class="mega-header-title">Global Port Network</div>
                 <div class="mega-search">
-                  <i class="fas fa-search" style="color:var(--ink-soft);"></i>
+                  <i class="fas fa-search"></i>
                   <input type="text" id="mega-port-search" placeholder="Search 49 ports...">
                 </div>
               </div>
-              <div class="mega-grid" id="mega-port-list">
-                <!-- Populated via JS -->
-              </div>
+              <div class="mega-grid" id="mega-port-list"></div>
             </div>
           </li>
 
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-        <a class="btn btn-primary" style="padding: 10px 24px; font-size: 0.68rem;" href="request-quote.html">Get
-          Quote</a>
+        <a class="btn btn-solid" style="padding: 10px 22px; font-size: 0.68rem;" href="request-quote.html">Get Quote</a>
       </nav>
     </div>
   </header>
@@ -1422,139 +1677,163 @@
   <main>
     <!-- SUBPAGE HERO -->
     <section class="subpage-hero">
-      <div class="subpage-hero-split">
-        <div class="subpage-hero-left">
-          <div class="container-inner">
+      <div class="container">
+        <div class="subpage-hero-grid">
+          <div class="subpage-hero-content">
             <div class="breadcrumb">
               <a href="index.html">Home</a>
               <span>/</span>
               <span>About Us</span>
             </div>
             <h1 class="subpage-hero-title">
-              About<br><em>ShipChandler</em><br>Germany
+              About<br><em>ShipChandler</em><br>Montenegro
             </h1>
-            <p class="subpage-hero-desc">SHIP CHANDLER GERMANY CO., LTD — professional ship chandler services at the
-              Port of Hamburg and all German commercial ports.</p>
+            <p class="subpage-hero-desc">
+              SHIP CHANDLER MONTENEGRO CO., LTD — professional ship chandler services at the Port of Bar and all
+              Montenegrin commercial ports.
+            </p>
+            <div class="subpage-hero-tags">
+              <span>Est. 2026</span>
+              <span>Port of Bar</span>
+              <span>IMPA Certified</span>
+            </div>
           </div>
-        </div>
-        <div class="subpage-hero-right">
-          <img src="assets/imgs/germany-hamburg-ships.jpg" alt="Port Background">
-          <div class="hero-side-label">Corporate Profile · Port of Hamburg</div>
+
+          <div class="subpage-hero-media">
+            <img src="assets/imgs/germany-hamburg-ships.jpg" alt="Port of Bar, Montenegro">
+            <div class="subpage-hero-label">
+              <i class="fas fa-anchor"></i>
+              Corporate Profile · Port of Bar
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- INTRODUCTION SPLIT SECTION -->
-    <section class="section section-paper">
-      <div class="container split">
-        <div class="split-copy reveal">
-          <span class="mono-label">Ship Chandler Germany</span>
-          <h2>Ship Chandler in <em>Germany</em></h2>
-          <p>Ship Chandler Germany delivers end-to-end maritime procurement and professional vessel provisioning
-            for ships calling at the Port of German terminals. We work closely alongside fleet managers, shipowners,
-            technical superintendents, purchasing executives, ship masters and local shipping agencies to ensure
-            seamless, punctual onboard delivery throughout the vessel's port turnaround.</p>
-          <p>Our commitment is to function as a unified, reliable agency desk for every vessel supply need in German
-            waters. Whether delivering prime galley provisions, bonded goods, deck consumables, or technical engine-room
-            spares, our dispatch desk synchronizes each order precisely with the ship's confirmed ETA, dock assignment,
-            port timetable and individual requisition list.</p>
-          <p>Germany Ship Port operate strictly as dedicated marine suppliers rather than general freight forwarding
-            agents. Our core specialization centers exclusively on ship chandlery: fresh food provisions, galley stores,
-            deck and engine supplies, bonded stores, crew beverages and cabin consumables.</p>
-
-          <div style="margin-top: 2rem;">
-            <a class="btn btn-primary" href="request-quote.html">Submit Your Requisition &rarr;</a>
+    <!-- INTRO SPLIT — WHITE PANEL -->
+    <section class="intro-strip">
+      <div class="container">
+        <div class="intro-panel reveal">
+          <div class="intro-copy">
+            <span class="eyebrow">Ship Chandler Montenegro</span>
+            <h2>Marine Supply at the <em>Port of Bar</em></h2>
+            <p>
+              Ship Chandler Montenegro delivers end-to-end maritime procurement and professional vessel provisioning for
+              ships calling at Montenegrin terminals. We work closely alongside fleet managers, shipowners, technical
+              superintendents, purchasing executives, ship masters and local shipping agencies to ensure seamless,
+              punctual onboard delivery throughout the vessel's port turnaround.
+            </p>
+            <p>
+              Our commitment is to function as a unified, reliable agency desk for every vessel supply need in
+              Montenegrin waters. Whether delivering prime galley provisions, bonded goods, deck consumables, or
+              technical engine-room spares, our dispatch desk synchronizes each order precisely with the ship's
+              confirmed ETA, dock assignment, port timetable and individual requisition list.
+            </p>
+            <p>
+              We operate strictly as dedicated marine suppliers rather than general freight forwarding agents. Our core
+              specialization centers exclusively on ship chandlery: fresh food provisions, galley stores, deck and
+              engine supplies, bonded stores, crew beverages and cabin consumables.
+            </p>
+            <a class="btn btn-solid" href="request-quote.html">
+              Submit Your Requisition <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
-        </div>
 
-        <div class="split-media reveal">
-          <img src="assets/imgs/germany0hamburge-rbig-ship.jpg"
-            alt="Vessel alongside German berth with provisioning equipment" loading="lazy">
+          <div class="intro-media">
+            <img src="assets/imgs/germany0hamburge-rbig-ship.jpg"
+              alt="Vessel alongside Montenegrin berth with provisioning equipment" loading="lazy">
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- WHY CHOOSE US (Exact Index Grid Style) -->
-    <section class="section section-paper" id="why-us">
+    <!-- WHY US — IRREGULAR BENTO MOSAIC (matches index) -->
+    <section class="section" id="why-us">
       <div class="container">
         <div class="section-head reveal">
-          <div class="section-head-left">
-            <span class="mono-label">01 — Why Choose Us</span>
-            <h2>Why Choose Ship Chandler <em>Germany?</em></h2>
-          </div>
-          <p>Our approach is based on fast communication, competitive sourcing and careful coordination with
-            the vessel’s operational schedule.</p>
+          <span class="eyebrow">01 — Why Choose Us</span>
+          <h2>Why Choose Ship Chandler <em>Montenegro?</em></h2>
+          <p>Our approach is built on fast communication, competitive sourcing and careful coordination with the
+            vessel’s operational schedule.</p>
         </div>
 
-        <div class="why-list reveal">
-          <div class="why-item">
-            <span class="why-num">01</span>
-            <div class="why-content">
+        <div class="why-bento reveal">
+          <div class="why-tile feature tall span-2">
+            <span class="tile-num-bg">01</span>
+            <span class="tile-index">01</span>
+            <div>
               <h3>One Point of Contact</h3>
               <p>Manage multiple supply categories through a single, dedicated operations desk.</p>
             </div>
           </div>
-          <div class="why-item">
-            <span class="why-num">02</span>
-            <div class="why-content">
+          <div class="why-tile span-2">
+            <span class="tile-num-bg">02</span>
+            <span class="tile-index">02</span>
+            <div>
               <h3>Fast Response to RFQs</h3>
-              <p>Ship Chandler Germany prioritize prompt communication to match the pace of your
-                vessel's port call.</p>
+              <p>We prioritise prompt communication to match the pace of your vessel's port call.</p>
             </div>
           </div>
-          <div class="why-item">
-            <span class="why-num">03</span>
-            <div class="why-content">
+          <div class="why-tile span-2">
+            <span class="tile-num-bg">03</span>
+            <span class="tile-index">03</span>
+            <div>
               <h3>Competitive Quotations</h3>
               <p>Benefit from cost-effective pricing without compromising on product quality.</p>
             </div>
           </div>
-          <div class="why-item">
-            <span class="why-num">04</span>
-            <div class="why-content">
+          <div class="why-tile feature span-3">
+            <span class="tile-num-bg">04</span>
+            <span class="tile-index">04</span>
+            <div>
               <h3>Local Procurement</h3>
               <p>Direct access to trusted local suppliers ensures rapid sourcing and delivery.</p>
             </div>
           </div>
-          <div class="why-item">
-            <span class="why-num">05</span>
-            <div class="why-content">
+          <div class="why-tile span-3">
+            <span class="tile-num-bg">05</span>
+            <span class="tile-index">05</span>
+            <div>
               <h3>International Sourcing</h3>
-              <p>Germany Ship Port leverage global networks to source specialized marine products when
-                needed.</p>
+              <p>We leverage global networks to source specialised marine products when needed.</p>
             </div>
           </div>
-          <div class="why-item">
-            <span class="why-num">06</span>
-            <div class="why-content">
+          <div class="why-tile span-2">
+            <span class="tile-num-bg">06</span>
+            <span class="tile-index">06</span>
+            <div>
               <h3>Consolidated Supply</h3>
               <p>Combine provision and technical stores into one coordinated, single delivery.</p>
             </div>
           </div>
-          <div class="why-item">
-            <span class="why-num">07</span>
-            <div class="why-content">
+          <div class="why-tile feature span-2">
+            <span class="tile-num-bg">07</span>
+            <span class="tile-index">07</span>
+            <div>
               <h3>Urgent Requisitions</h3>
               <p>Dedicated support for emergency requirements, coordinated directly with port agents.</p>
             </div>
           </div>
-          <div class="why-item">
-            <span class="why-num">08</span>
-            <div class="why-content">
+          <div class="why-tile span-2">
+            <span class="tile-num-bg">08</span>
+            <span class="tile-index">08</span>
+            <div>
               <h3>Clear Communication</h3>
               <p>Transparent updates and coordination with both the vessel and purchasing departments.</p>
             </div>
           </div>
-          <div class="why-item">
-            <span class="why-num">09</span>
-            <div class="why-content">
+          <div class="why-tile span-3">
+            <span class="tile-num-bg">09</span>
+            <span class="tile-index">09</span>
+            <div>
               <h3>Delivery Coordination</h3>
               <p>All deliveries are precisely timed according to your vessel's ETA and berth schedule.</p>
             </div>
           </div>
-          <div class="why-item">
-            <span class="why-num">10</span>
-            <div class="why-content">
+          <div class="why-tile feature span-3">
+            <span class="tile-num-bg">10</span>
+            <span class="tile-index">10</span>
+            <div>
               <h3>IMPA Compliance</h3>
               <p>Full support for IMPA and specification-based requisitions for effortless ordering.</p>
             </div>
@@ -1563,12 +1842,34 @@
       </div>
     </section>
 
-    <!-- CTA SECTION -->
-    <section class="cta-section">
-      <div class="container reveal">
-        <h2>Ready to Supply Your Vessel?</h2>
-        <p>Send us your requisition list and our team will provide a competitive quote.</p>
-        <a class="btn btn-primary" href="request-quote.html">Request a Quote Now</a>
+    <!-- REQUEST A QUOTE CTA — DARK BURGUNDY SHOWCASE -->
+    <section class="quote-cta">
+      <div class="container">
+        <div class="quote-cta-inner reveal">
+          <div class="quote-cta-content">
+            <span class="eyebrow">Ready to Supply</span>
+            <h2>Request a <em>Quote</em> for Your Vessel</h2>
+            <p class="quote-cta-desc">
+              Tell us your requirements and our operations desk will respond promptly with a tailored quotation.
+              Provisions, technical stores and bonded goods — coordinated in one place.
+            </p>
+            <div class="quote-cta-meta">
+              <span>Fast Response</span>
+              <span>Port of Bar</span>
+              <span>24/7 Operations</span>
+            </div>
+          </div>
+
+          <div class="quote-cta-actions">
+            <a class="btn-quote-primary" href="request-quote.html">
+              <span>Request a Quote</span>
+              <span class="btn-arrow-icon"><i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a class="quote-cta-secondary" href="https://wa.me/6590190005" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -1576,17 +1877,17 @@
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-top">
+      <div class="footer-grid">
         <div class="footer-brand">
           <a class="logo" href="index.html">
-            <img src="assets/imgs/logo-shipchandler-germany.png" alt="Logo" width="44" height="44">
+            <img src="assets/imgs/logo-shipchandler-malta.png" alt="Logo" width="42" height="42">
             <span class="logo-text">
               <strong>ShipChandler</strong>
-              <span style="color: var(--acid);">Germany</span>
+              <span style="color: var(--accent);">Montenegro</span>
             </span>
           </a>
-          <p>SHIP CHANDLER GERMANY CO., LTD is a licensed marine supplier providing provisions, technical stores, bonded
-            goods and emergency vessel supply across all German ports and anchorages.</p>
+          <p>SHIP CHANDLER MONTENEGRO CO., LTD is a licensed marine supplier providing provisions, technical stores,
+            bonded goods and emergency vessel supply across all Montenegrin ports and anchorages.</p>
         </div>
 
         <div class="footer-col">
@@ -1614,22 +1915,22 @@
         <div class="footer-col">
           <h4>Contact Us</h4>
           <ul class="footer-contact">
-            <li><i class="fas fa-map-marker-alt"></i> Port of Hamburg, Am Strandkai 1, 20457 Hamburg, Germany</li>
+            <li><i class="fas fa-map-marker-alt"></i> Port of Bar, Obala 13. Jula, 85000 Bar, Montenegro</li>
             <li><i class="fas fa-envelope"></i> <a
-                href="mailto:sales@shipchandlergermany.com">sales@shipchandlergermany.com</a></li>
-            <li><i class="fas fa-user-tie"></i> Thomas Müller</li>
+                href="mailto:sales@shipchandlermontenegro.com">sales@shipchandlermontenegro.com</a></li>
+            <li><i class="fas fa-user-tie"></i> Marko Jovanović</li>
             <li>
-              <a class="hero-whatsapp-bar" href="https://wa.me/6590190005" target="_blank" rel="noopener noreferrer"
+              <a class="footer-whatsapp" href="https://wa.me/6590190005" target="_blank" rel="noopener noreferrer"
                 aria-label="Direct WhatsApp contact (+65-9019-0005)">
-                <span class="hero-whatsapp-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <span class="footer-whatsapp-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
                     <path
                       d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                   </svg>
                 </span>
-                <span class="hero-whatsapp-tag">WhatsApp:</span>
-                <span class="hero-whatsapp-num">(+65-9019-0005)</span>
-                <span class="hero-whatsapp-arrow" aria-hidden="true">&rarr;</span>
+                <span class="footer-whatsapp-tag">WhatsApp:</span>
+                <span class="footer-whatsapp-num">(+65-9019-0005)</span>
+                <span class="footer-whatsapp-arrow" aria-hidden="true">&rarr;</span>
               </a>
             </li>
           </ul>
@@ -1637,20 +1938,22 @@
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 SHIP CHANDLER GERMANY CO., LTD. All rights reserved.</div>
-        <!-- <div>Design — Editorial Maritime</div> -->
+        <div>&copy; 2026 SHIP CHANDLER MONTENEGRO CO., LTD.</div>
+        <div class="footer-bottom-right">
+          <span>Port of Bar · Montenegro</span>
+          <span>All rights reserved</span>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP -->
+  <!-- WHATSAPP FLOAT -->
   <a href="https://wa.me/6590190005" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
     aria-label="WhatsApp Contact +65-9019-0005">
     <i class="fab fa-whatsapp"></i>
   </a>
 
   <script>
-    // --- Port List Data for Dropdown ---
     const ports = [
       "Ship Chandler Dar Es Salaam", "Ship Chandler Apapa", "Ship Chandler Onne Port Nigeria", "San Pedro Ship Supply Chandler",
       "Ship Chandler Abidjan", "Ship Chandler Freetown", "Monrovia Ship Chandler", "Ship Chandler Maputo", "Ship Chandler Matadi",
@@ -1665,7 +1968,6 @@
       "Ship Chandler Dakar", "Ship Chandler Mombasa", "Ship Chandlers Saldanha Bay", "Ship Chandler Owendo", "Ship Chandlers Richards Bay"
     ];
 
-    // Populate Mega Menu
     const megaList = document.getElementById('mega-port-list');
     if (megaList) {
       const third = Math.ceil(ports.length / 3);
@@ -1690,19 +1992,15 @@
       megaList.appendChild(createPortGroup('African Ports (E-M)', col2));
       megaList.appendChild(createPortGroup('African Ports (N-Z)', col3));
 
-      // Mega Menu Search
       const searchInput = document.getElementById('mega-port-search');
       if (searchInput) {
         searchInput.addEventListener('input', function (e) {
           const query = e.target.value.toLowerCase();
           const allLinks = megaList.querySelectorAll('a');
           const groups = megaList.querySelectorAll('.mega-group');
-
           allLinks.forEach(link => {
-            const text = link.textContent.toLowerCase();
-            link.style.display = text.includes(query) ? 'block' : 'none';
+            link.style.display = link.textContent.toLowerCase().includes(query) ? 'block' : 'none';
           });
-
           groups.forEach(group => {
             const hasVisible = Array.from(group.querySelectorAll('a')).some(a => a.style.display !== 'none');
             group.style.display = hasVisible ? 'block' : 'none';
@@ -1718,26 +2016,19 @@
       function positionMegaMenu() {
         if (!megaMenuEl || !siteHeaderEl) return;
         const headerRect = siteHeaderEl.getBoundingClientRect();
-        // Anchor the mega menu flush against the bottom of the sticky header,
-        // with a 4px gap so it doesn't visually touch.
         megaMenuEl.style.top = (headerRect.bottom + 4) + 'px';
       }
 
-      // Run on load, on scroll (in case the top-bar shrinks on scroll), and on resize
       window.addEventListener('load', positionMegaMenu);
       window.addEventListener('scroll', positionMegaMenu, { passive: true });
       window.addEventListener('resize', positionMegaMenu);
-      // --- Sticky Header Effect ---
+
       const header = document.querySelector('.site-header');
       window.addEventListener('scroll', () => {
-        if (window.scrollY > 20) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
-        }
+        if (window.scrollY > 20) header.classList.add('scrolled');
+        else header.classList.remove('scrolled');
       });
 
-      // --- Mobile Nav Toggle ---
       const navToggle = document.querySelector('.nav-toggle');
       const primaryNav = document.querySelector('.primary-nav');
 
@@ -1755,7 +2046,6 @@
         }
       });
 
-      // --- Mobile Dropdown Toggles ---
       const dropdownItems = document.querySelectorAll('.nav-item.has-dropdown');
       dropdownItems.forEach(item => {
         const link = item.querySelector('.nav-link');
@@ -1767,7 +2057,6 @@
         });
       });
 
-      // --- Scroll Reveal Animation ---
       const revealElements = document.querySelectorAll('.reveal');
       const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -1776,13 +2065,18 @@
             revealObserver.unobserve(entry.target);
           }
         });
-      }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -60px 0px'
-      });
-
+      }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
       revealElements.forEach(el => revealObserver.observe(el));
 
+      document.querySelectorAll('.why-tile').forEach(tile => {
+        tile.addEventListener('mousemove', e => {
+          const rect = tile.getBoundingClientRect();
+          const mx = ((e.clientX - rect.left) / rect.width) * 100;
+          const my = ((e.clientY - rect.top) / rect.height) * 100;
+          tile.style.setProperty('--mx', mx + '%');
+          tile.style.setProperty('--my', my + '%');
+        });
+      });
     });
   </script>
 </body>
